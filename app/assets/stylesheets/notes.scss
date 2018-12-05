@@ -1,4 +1,38 @@
 // Place all the styles related to the notes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.table{
+       color: #663399 !important;
+      font-weight: 100;
+   }
+label {
+ font-family: Georgia, "Times New Roman", Times, serif;
+ font-size: 20px;
+ color: #333;
+ height: 20px;
+ width: 200px;
+ margin-top: 10px;
+ margin-left: -15px;
+ text-align: left;
+ padding-right: 30px
+}
+.back-button{
+	margin-top: 40px;
+	margin-left: 70px
+}
+
+p{
+font-family: Georgia;
+font-size: 15px;
+font-size: 20px
+}
+strong{
+	color: #000000;
+	font-weight: 5px;
+	font-size: 20px
+}
+
+
+
+
 

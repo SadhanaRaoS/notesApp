@@ -1,4 +1,5 @@
 <p id="notice"><%= notice %></p>
+<div class="content" style="margin-top: 30px;margin-left: 10px">
 
 <p>
   <strong>Title:</strong>
@@ -14,6 +15,8 @@
   <strong>Tag:</strong>
   <%= @note.tag %>
 </p>
-
+</div>
+<div class="content" style="margin-left: 10px">
 <%= link_to 'Edit', edit_note_path(@note) %> |
 <%= link_to 'Back', notes_path %>
+</div>
