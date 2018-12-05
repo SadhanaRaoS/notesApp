@@ -19,19 +19,23 @@ Usage:
 
 1. Install all the dependencies:
 
-	bundle intall  
+	To install the ruby gem dependencies:
 
-	If you do not have bundler then first run 
+	run 'bundle intall' 
+
+	If you do not have bundler, then first run 
 
 	gem install bundler 
-	bundle install 
 
+	and then do 
+
+	bundle install 
 
 	To install and run mongodb 
 
 	run 'brew install mongodb'
 
-	In case of unsuscessful installation , try downloading the compatible version from the mongodb website using the link https://www.mongodb.com/download-center/community
+	In case of unsuscessful installation due to version incompatability , try downloading the compatible version from the mongodb website using the link https://www.mongodb.com/download-center/community
 
 2. Start the application: 
 
