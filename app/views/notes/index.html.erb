@@ -1,34 +1,36 @@
 <p id="notice"><%= notice %></p>
-
-<h1 class="text-center" style="font-size:2.0rem">Notes</h1>
-<div class="container" style="margin-top:30px">
-  <div class="row">
-  <table class ="table table-bordered table-hover">
-    <thead class="thead-light">
-      <tr>
-        <th>Title</th>
-        <th>Content</th>
-        <th>Tag</th>
-        <th>Actions</th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <% @notes.each do |note| %>
+<% if @notes.present? %>
+  <h1 class="text-center" style="font-size:2.0rem">Notes</h1>
+  <div class="container" style="margin-top:30px">
+    <div class="row">
+    <table class ="table table-bordered table-hover">
+      <thead class="thead-light">
         <tr>
-            <td><%= note.title %></td>
-            <td><%= note.content %></td>
-            <td><%= note.tag %></td>
-              <td><%= link_to 'Show', note , :class=>'btn btn-success btn-sm' %>
-              <%= link_to 'Edit', edit_note_path(note) , :class => "btn btn-success btn-sm"  %>
-              <%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-danger btn-sm' %></td>
+          <th>Title</th>
+          <th>Content</th>
+          <th>Tag</th>
+          <th>Actions</th>
         </tr>
-      <% end %>
-    </tbody>
-  </table>
-</div>
-</div>
+      </thead>
 
+      <tbody>
+        <% @notes.each do |note| %>
+          <tr>
+              <td><%= note.title %></td>
+              <td><%= note.content %></td>
+              <td><%= note.tag %></td>
+                <td><%= link_to 'Show', note , :class=>'btn btn-success btn-sm' %>
+                <%= link_to 'Edit', edit_note_path(note) , :class => "btn btn-success btn-sm"  %>
+                <%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-danger btn-sm' %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+  </div>
+<% else  %>
+  <p style="text-align: center;"> No notes to display </p>
+<%end %>
 <br>
 <div class="container" align="text-center">
 <%= link_to 'New Note', new_note_path, :class => 'btn btn-info' %>
