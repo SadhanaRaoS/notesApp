@@ -1,6 +1,7 @@
 # README
 
 The notes app created with rails and mongo. The application supports following apis:
+
 	1. create
 	2. edit
 	3. show
