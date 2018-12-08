@@ -155,3 +155,15 @@ test:
         read:
           mode: :primary
         max_pool_size: 1
+production:
+  clients:
+    default:
+      database: notes_app_development
+      hosts:
+        - ds127781.mlab.com:27781
+      options:
+        user: 'user'
+        password: 'Insight05'
+        read:
+          mode: :primary
+        max_pool_size: 1
